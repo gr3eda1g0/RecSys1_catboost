@@ -1,7 +1,7 @@
 # RecSys1_catboost
-My content recommendation system on CatBoostClassifier and tf-idf features with SVD dimension reduction.  
+Content recommendation system on CatBoostClassifier and tf-idf features with SVD dimension reduction.  
 
-Моя контентная рекомендательная система на основе CatBoostClassifier.  
+Контентная рекомендательная система на основе CatBoostClassifier.  
 Текстовые признаки для уменьшения объема используемой памяти векторизовались с использованием TfidfVectorizer, затем размерность полученных признаков понижалась с помощью TruncatedSVD. Таким образом получено значительное сокращение используемой памяти при сохранении высокой важности полученных признаков для обучения модели.  
 
 Файл recsys1_catboost_model_train.ipynb предназначен для создания набора признаков, тренировки на них модели и проверки работоспособности модели с выводом метрик. Файл содержит только финальный результат выбора признаков для обучения и параметров модели. Эксперименты с подбором и тестированием признаков, подбор параметров модели с использованием GreedSearchCV не вошли в данный файл.  
